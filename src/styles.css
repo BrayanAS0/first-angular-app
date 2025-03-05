@@ -1,1 +1,86 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --bg-color: #f8f9fa;
+    --text-color: #333;
+    --container-bg: #ffffff;
+    --btn-bg: #e0e0e0;
+    --btn-save: #28a745;
+    --btn-delete: #dc3545;
+    --btn-undo: #ffc107;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  body.dark-mode {
+    --bg-color: #121212;
+    --text-color: white;
+    --container-bg: #333;
+    --btn-bg: #555;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background: var(--container-bg);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: var(--text-color);
+  }
+  
+  textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+  }
+  
+  .btn.save {
+    background-color: var(--btn-save);
+    color: white;
+  }
+  
+  .btn.delete {
+    background-color: var(--btn-delete);
+    color: white;
+  }
+  
+  .btn.undo {
+    background-color: var(--btn-undo);
+    color: black;
+  }
+  
+  .theme-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
